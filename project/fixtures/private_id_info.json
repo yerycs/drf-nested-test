@@ -1,0 +1,11 @@
+[
+    {
+        "model": "project.private_id_info",
+        "pk": 1,
+        "fields": {
+            "first_name": "first",
+            "last_name": "last",
+            "user_id": 1
+        }
+    }
+]
