@@ -8,7 +8,7 @@ class PrivateIDInfoSerializer(serializers.ModelSerializer):
         fields = ('first_name', 'last_name', )
 
 class UserInfoSerializer(serializers.ModelSerializer):
-    privateIdInfo = PrivateIDInfoSerializer(many=True, read_only=True)
+    privateIdInfo = PrivateIDInfoSerializer(many=True, read_only=True, source='private_id_info_set')
 
     class Meta:
         model = User
